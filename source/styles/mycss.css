@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+body {
+    font-family: Inter, Roboto;
+    background: linear-gradient(140deg, #ff7b00 0%, #cdcbcb 100%);
+}
+
+p {
+    color:azure;
+}
+
+.nav-link {
+    color: rgb(255, 174, 53);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(155, 155, 155);
+}
+
+.navbar-toggler {
+    background-color: rgb(204, 204, 204);
+}
+
+.sidebar {
+    color: azure;
+    background-color: #05050571;
+}
+
+footer, 
+.btn-outline-primary {
+    background-color: #202020e3;
+}
+
+.card {
+    background-color: #05050571;
+    color: azure;
+}
+
+.card a {
+    text-decoration: none;
+    color: azure;
+}
+
+.slide-text, .footer-text {
+    color: aliceblue;
+    margin: auto auto;
+}
+
+.call-anim {
+    animation: call1 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call1 {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
